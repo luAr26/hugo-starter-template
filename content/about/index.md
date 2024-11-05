@@ -1,6 +1,7 @@
 +++
 date = '2024-11-03T22:48:12+02:00'
 title = 'About page'
+draft = false
 +++
 
 ### Write something about yourself

@@ -1,0 +1,36 @@
+{
+  "name": "hugo-theme-from-scratch",
+  "version": "0.1.0",
+  "description": "Hugo starter template",
+  "main": "index.js",
+  "scripts": {
+    "dev": "exec-bin node_modules/.bin/hugo/hugo server --gc --disableFastRender",
+    "dev:drafts": "exec-bin node_modules/.bin/hugo/hugo server --gc --disableFastRender --buildFuture --buildDrafts",
+    "build": "exec-bin node_modules/.bin/hugo/hugo --gc --cleanDestinationDir --minify",
+    "start:dev": "exec-bin node_modules/.bin/hugo/hugo server --gc --disableFastRender  --cleanDestinationDir",
+    "start:prod": "exec-bin node_modules/.bin/hugo/hugo server --gc --disableFastRender  --cleanDestinationDir --environment production --minify",
+    "npm-check": "npm-check -u",
+    "postinstall": "hugo-installer --version otherDependencies.hugo --extended --destination node_modules/.bin/hugo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luAr26/hugo-starter-template.git"
+  },
+  "keywords": [
+    "hugo"
+  ],
+  "author": "luAr26",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luAr26/hugo-starter-template/issues"
+  },
+  "homepage": "https://github.com/luAr26/hugo-starter-template#readme",
+  "devDependencies": {
+    "npm-check": "^6.0.1",
+    "exec-bin": "^1.0.0",
+    "hugo-installer": "^4.0.1"
+  },
+  "otherDependencies": {
+    "hugo": "0.136.5"
+  }
+}
