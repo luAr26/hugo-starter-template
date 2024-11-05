@@ -1,2 +1,2 @@
-const myName = "Raul";
-console.log(`Hello ${myName}`);
+// Get the current year and display it
+document.getElementById("js-year").innerHTML = new Date().getFullYear();

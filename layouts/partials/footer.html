@@ -1,1 +1,10 @@
-<footer>footer</footer>
+<footer>
+  <div>
+    <div>
+      {{ with .Site.Params.footer}} {{ . | markdownify }} {{ else }}
+      <span>&copy; <strong id="js-year"></strong></sp
+      ><noscript>{{now.Format "2006" }}</noscript> - {{ .Site.Copyright |
+      default .Site.Title }} {{end}}
+    </div>
+  </div>
+</footer>
